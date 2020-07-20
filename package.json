@@ -1,0 +1,15 @@
+{
+  "name": "playground",
+  "version": "0.0.1",
+  "description": "HTML/CSS Playground",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "dev": "lite-server index.html"
+  },
+  "author": "Colin Stodd (Colper) => https://colinstodd.com || @cbstodd",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

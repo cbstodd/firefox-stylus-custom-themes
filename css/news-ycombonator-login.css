@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+:root {
+	/* Fonts */
+	--font-sans: 'Fira Sans', 'Source Sans Pro', Roboto, 'Helventica Neue', Arial, sans-serif;
+	--font-condensed: 'Fira Sans Extra Condensed', 'Roboto Condensed', Oswald, Tomaha, sans-serif;
+	--font-mono: 'Roboto Mono', 'SF Mono', Menlo, monospace;
+	/* Colors */
+	--dark: #122033;
+	--light: #fff;
+	--light-gray: #FCFDFD;
+	--midnight: #122033;
+	--matt-blue: #202C40;
+	--charcol: #3d3d3d;
+	--granite: #678598;
+	--ocean: #00588a;
+	--sky: #008fd5;
+	--ice: #69badf;
+	--water: #abe1fa;	
+	--steel: #8fb0c5;
+	--ash: #94a3ac;
+	--silver: #dcddde;
+	--cloud: #f2f6f8;
+	--border: rgb(128, 128, 128);	
+	--valencia: #f58320;
+	--gold: #faa61a;
+
+	/* Link Colors */
+	--link-blue: #C4E5F5;
+	--link-gray: #F1F5F6;
+	--link-yellow: #FFD081;
+	--main-box-shaddow: var(--link-gray) 0 -3px 0 0 inset;
+	--main-box-shaddow-link-blue: var(--link-blue) 0 -3px 0 0 inset;
+	--main-box-shaddow-ice: var(--ice) 0 -3px 0 0 inset;
+}
+
+body {
+	background-color: var(--cloud);
+	color: var(--charcol);
+	margin: 0;
+	padding: 3em 0 0 0;
+	font-family: var(--font-sans);
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	text-transform: capitalize;
+}
+
+b {
+	color: var(--matt-blue);
+	border-top: 2px solid var(--matt-blue);
+	padding-top: 10px;
+}
+
+body > b,
+body > a {
+	margin-left: 12%;
+}
+
+body > b:first-child {
+	padding-top: 5em;
+	text-align: center;
+}
+
+
+h1,
+h2,
+h3,
+thead {
+	font-family: var(--font-condensed);
+}
+
+h4,
+h5,
+h6,
+p,
+td,
+li,
+div,
+span,
+a {
+	font-family: var(--font-sans);
+}
+
+a {
+	background-color: var(--link-blue);
+	border-bottom: 1px solid var(--ice);
+	color: var(--midnight);
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+a:hover,
+a:focus {
+	background-color: var(--link-yellow);
+	color: var(--midnight);
+	border-bottom: 1px solid var(--gold);
+	text-decoration: none;
+}
+
+a:focus-within {
+	background-color: var(--valencia);
+	color: var(--midnight);
+	border-bottom: 1px solid var(--gold);
+	text-decoration: none;
+}
+
+/* Forms */
+form {
+	padding: 3em;
+	margin: 3% 10%;
+	color: var(--charcol);
+	border-radius: 20px;
+	background-color: var(--light-gray);
+	box-shadow: 11px 11px 40px #d1d1d1,
+	11px 11px 40px #d1d1d1,
+	-11px -11px 40px #d1d1d1,
+	-11px -11px 40px #d1d1d1;
+}
+
+form > table {
+	width: 100%;
+}
+
+form > table > tbody > tr > td {
+	text-transform: capitalize;
+	font-family: var(--font-condensed);
+	text-align: right;
+	max-width: 10%;
+	padding-right: 10%;
+}
+form > table > tbody > tr > td > input {
+	min-width: 80%;
+}
+input[type="text"],
+input[type="password"],
+input[type="textarea"],
+input[type="number"] {
+	font-family: var(--font-mono);
+	color:  var(--ice);
+	min-width: 100%;
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input[type="submit"] {
+	width: 100%;
+	font-family: var(--font-condensed);
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 0.7rem 1rem;
+	margin: 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+	box-shadow: var(--main-box-shaddow);
+}
+
+input[type="submit"]:hover {
+	width: 100%;
+	font-family: var(--font-condensed);
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 0.7rem 1rem;
+	margin: 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+	background: var(--link-blue);
+	box-shadow: var(--main-box-shaddow-ice);
+	border-color: var(--ice);
+}
+
+input[type="submit"]:focus-within {
+	width: 100%;
+	font-family: var(--font-condensed);
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 0.7rem 1rem;
+	margin: 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+	background: var(--link-blue);
+	box-shadow: var(--main-box-shaddow-link-blue);
+	border-color: var(--link-blue);
+}
