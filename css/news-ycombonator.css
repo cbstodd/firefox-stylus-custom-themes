@@ -58,6 +58,7 @@ a:link {
 }
 
 a.storylink {
+	font-family: var(--font-condensed);
 	font-size: 1.1em;
 	line-height: 2em;
 }
@@ -98,6 +99,27 @@ body > * > table#hnmain {
 	-11px -11px 40px #d1d1d1;
 }
 
+table#hnmain > tbody > tr > td {
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+body > b,
+body > a {
+	margin-left: 12%;
+}
+
+body > b:first-child {
+	padding-top: 5em;
+	text-align: center;
+}
+
+b {
+	color: var(--matt-blue);
+	border-left: 2px solid var(--matt-blue);
+	padding-left: 10px;
+}
+
 span.pagetop > b > a, span.pagetop > a {
 	color: var(--dark);
 } 
@@ -129,20 +151,8 @@ tr.athing {
 	padding-top: 30px !important;
 }
 
-b {
-	color: var(--matt-blue);
-	border-left: 2px solid var(--matt-blue);
-	padding-left: 10px;
-}
-
-body > b,
-body > a {
-	margin-left: 12%;
-}
-
-body > b:first-child {
-	padding-top: 5em;
-	text-align: center;
+div.comment > span.commtext {
+	line-height: 2em;
 }
 
 /* Inputs */

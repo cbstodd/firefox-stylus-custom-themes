@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+:root {
+	/* Fonts */
+	--font-sans: 'Fira Sans', 'Source Sans Pro', Roboto, 'Helventica Neue', Arial, sans-serif;
+	--font-condensed: 'Fira Sans Extra Condensed', 'Roboto Condensed', Oswald, Tomaha, sans-serif;
+	--font-mono: 'Roboto Mono', 'SF Mono', Menlo, monospace;
+	/* Colors */
+	--dark: #122033;
+	--light: #fff;
+	--light-gray: #FCFDFD;
+	--midnight: #122033;
+	--matt-blue: #202C40;
+	--charcol: #3d3d3d;
+	--granite: #678598;
+	--ocean: #00588a;
+	--sky: #008fd5;
+	--ice: #69badf;
+	--water: #abe1fa;
+	--steel: #8fb0c5;
+	--ash: #94a3ac;
+	--silver: #dcddde;
+	--cloud: #f2f6f8;
+	--border: rgb(128, 128, 128);
+	--valencia: #f58320;
+	--gold: #faa61a;
+
+	/* Link Colors */
+	--link-blue: #C4E5F5;
+	--link-gray: #F1F5F6;
+	--link-yellow: #FFD081;
+	--main-box-shaddow: var(--link-gray) 0 -3px 0 0 inset;
+	--main-box-shaddow-link-blue: var(--link-blue) 0 -3px 0 0 inset;
+	--main-box-shaddow-ice: var(--ice) 0 -3px 0 0 inset;
+}
+
+body {
+	background-color: var(--cloud);
+	color: var(--charcol);
+	margin: 0;
+	padding: 3em 0 0 0;
+	font-family: var(--font-sans);
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	text-transform: capitalize;
+}
