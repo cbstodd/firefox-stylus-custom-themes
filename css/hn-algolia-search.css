@@ -47,3 +47,34 @@ body {
 	height: 100%;
 	text-transform: capitalize;
 }
+
+main#root > div.default > .container {
+    padding: 2em 3em;
+	margin: 3% 10%;
+	color: var(--charcol);
+	border-radius: 20px;
+	background-color: var(--light-gray);
+	box-shadow: 11px 11px 40px #d1d1d1,
+	11px 11px 40px #d1d1d1,
+	-11px -11px 40px #d1d1d1,
+	-11px -11px 40px #d1d1d1;
+}
+
+.SearchHeader_search {
+    padding: 1em 2em !important;
+    border-radius: 7px;
+    font-family: var(--font-condensed);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    box-shadow: #BA6222 0px -5px 0px 0px inset;
+}
+
+section.SearchResults {
+    box-shadow: 3px 3px 7px #d1d1d1,
+    3px 3px 7px #d1d1d1,
+	-3px -3px 7px #d1d1d1,
+	-3px -3px 7px #d1d1d1;
+}
