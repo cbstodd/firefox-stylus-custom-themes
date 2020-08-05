@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
-    "dev": "lite-server index.html"
+    "hacker-dev": "lite-server ./hacker-news/index.html"
   },
   "author": "Colin Stodd (Colper) => https://colinstodd.com || @cbstodd",
   "license": "ISC",
